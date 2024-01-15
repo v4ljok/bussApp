@@ -1,0 +1,42 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: #0276ad;
+    color: #000;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.popup {
+    width: 500px;
+    padding: 30px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+input {
+    border-style: 5px;
+    width: 81%;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: arial;
+    border: 2px solid #000;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
