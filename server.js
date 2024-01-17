@@ -16,10 +16,10 @@ app.listen(8080, function () {
 });
 
 const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "mydbase",
+    host: "d26893.mysql.zonevs.eu",
+    user: "d26893_busstops",
+    password: "3w7PYquFJhver0!KdOfF",
+    database: "d26893_busstops",
 });
 
 con.connect(function (err) {
@@ -123,8 +123,3 @@ app.get("/getSaabumised/:bussName/:stopName/:arrivalTime", function (request, re
         response.send(times);
     });
 });
-/*SELECT DISTINCT arrival_time FROM routes
-JOIN trips ON trips.route_id = routes.route_id
-JOIN stop_times ON stop_times.trip_id = trips.trip_id
-JOIN stops ON stops.stop_id = stop_times.stop_id
-WHERE route_short_name = '1' AND stop_name = 'Paemurru' AND arrival_time > '08:00:00'*/
