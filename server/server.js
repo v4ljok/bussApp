@@ -1,7 +1,10 @@
 const mysql = require("mysql");
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
 
 app.use(function (request, response, next) {
     response.append("Access-Control-Allow-Origin", "*");
