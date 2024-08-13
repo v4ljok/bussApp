@@ -27,6 +27,10 @@ con.connect(function (err) {
     console.log("Connected!");
 });
 
+app.get("/", function (request, response) {
+    response.send("Welcome to the Bus Stop Server");
+});
+
 app.get("/getArea", function (request, response) {
     const sql = "SELECT DISTINCT stop_area FROM stops";
     con.query(sql, function (err, result) {
